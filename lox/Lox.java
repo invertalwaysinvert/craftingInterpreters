@@ -1,4 +1,4 @@
-package com.craftinginterpreters.lox;
+package lox;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
-import static com.craftinginterpreters.lox.Scanner.*;
 
 public class Lox {
     static boolean hadError = false;

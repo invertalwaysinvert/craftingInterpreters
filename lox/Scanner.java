@@ -1,12 +1,11 @@
-package com.craftinginterpreters.lox;
+package lox;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.craftinginterpreters.lox.TokenType.*;
-import static com.craftinginterpreters.lox.Token.*;
+import static lox.TokenType.*;
 
 
 class Scanner {
@@ -58,7 +57,7 @@ class Scanner {
       char c = advance();
       switch (c) {
           case '(': addToken(LEFT_PAREN); break;
-          case ')': addToken(RIGHT_PARENT); break;
+          case ')': addToken(RIGHT_PAREN); break;
           case '{': addToken(LEFT_BRACE); break;
           case '}': addToken(RIGHT_BRACE); break;
           case ',': addToken(COMMA); break;
